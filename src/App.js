@@ -37,7 +37,7 @@ function App() {
         // Busca por endereço no formato: UF,Cidade,Rua
         const partes = input.trim().split(",")
         if (partes.length < 3) {
-          alert("Formato inválido. Use: UF,Cidade,Rua (Ex: SP,Itapevi,Rua Joaquina Gomes Barbosa número 20)")
+          alert("Formato inválido. Use: UF,Cidade,Rua (Ex: SP,Itapevi,Rua Joaquina Gomes Barbosa )")
           return
         }
 
@@ -70,7 +70,7 @@ function App() {
       <div className="containerInput">
         <input
           type="text"
-          placeholder="UF,Cidade,Rua e número"
+          placeholder="UF,Cidade,Rua"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
